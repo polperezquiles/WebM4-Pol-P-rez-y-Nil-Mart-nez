@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para dispositivos móviles -->
-    <title>Inicio - Medio Ambiente en Mollet del Vallés</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Galería - Medio Ambiente en Mollet del Vallés</title> <!-- Título que aparecerá en la pestaña del navegador -->
     <link rel="stylesheet" href="styles.css"> <!-- Vincula un archivo CSS externo para estilos -->
     <style>
-        /* Estilos CSS para el diseño de la página */
         body {
             text-align: center; /* Centra el texto en todo el cuerpo */
             background-color: #e0f7fa; /* Color de fondo claro */
@@ -36,7 +35,6 @@
             width: 100%; /* Ajusta el tamaño de las imágenes al 100% del contenedor */
             max-width: 60%; /* Tamaño máximo de las imágenes */
             height: auto; /* Mantiene la proporción de las imágenes */
-            margin: 0 auto; /* Centra las imágenes dentro del contenedor */
         }
         a {
             color: #4CAF50; /* Color del texto de los enlaces */
@@ -54,50 +52,54 @@
             color: black; /* Color del texto en el pie de página */
         }
     </style>
-</head>
 <body>
     <header>
         <h1>Conservación del Medio Ambiente en Mollet del Vallés</h1> <!-- Título principal de la página -->
         <a href="https://www.molletvalles.cat/"> <!-- Enlace al sitio web del Ayuntamiento -->
             <img src="logoMollet.jpg" alt="Logo del Ayuntamiento" style="max-width: 30%; height: auto;"> <!-- Logo del Ayuntamiento -->
         </a>
-       
+        <h1>Galería de Imágenes</h1> <!-- Título de la galería -->
         <nav>
-            <ul> <!-- Lista de navegación -->
-                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
-                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
-                <li><a href="galeria.html">Galería</a></li> <!-- Enlace a la galería -->
-                <li><a href="medidas.html">Medidas Medioambientales</a></li> <!-- Enlace a medidas medioambientales -->
-                <li><a href="consejos.html">Consejos</a></li> <!-- Enlace a consejos -->
-                <li><a href="ue.html">Unión Europea</a></li> <!-- Enlace a la sección de la Unión Europea -->
-                <li><a href="citas.html">Citaciones</a></li> <!-- Enlace a la sección de citaciones -->
+            <ul style="list-style-type: none; padding: 0;"> <!-- Lista de navegación sin viñetas -->
+                <li style="display: inline; margin: 0 3%;"> <a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li style="display: inline; margin: 0 3%;"> <a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                <li style="display: inline; margin: 0 3%;"> <a href="galeria.html">Galería</a></li> <!-- Enlace a la galería -->
+                <li style="display: inline; margin: 0 3%;"> <a href="medidas.html">Medidas Medioambientales</a></li> <!-- Enlace a medidas medioambientales -->
+                <li style="display: inline; margin: 0 3%;"> <a href="consejos.html">Consejos</a></li> <!-- Enlace a consejos -->
+                <li style="display: inline; margin: 0 3%;"> <a href="ue.html">Unión Europea</a></li> <!-- Enlace a la sección de la Unión Europea -->
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio"> <!-- Sección principal de inicio -->
-            <h2>Noticias y Eventos</h2> <!-- Título de la sección de noticias y eventos -->
-            <article> <!-- Artículo de noticias -->
-                <h3>Evento de Limpieza de Espacios Públicos</h3> <!-- Título del artículo -->
-                <p>Únete a nosotros el 15 de enero para limpiar nuestros parques y espacios públicos. ¡Tu participación es crucial para mantener nuestra ciudad limpia!</p> <!-- Descripción del evento -->
-                <a href="https://www.molletvalles.cat/es/servicios/gestion-de-residuos-y-limpieza-viaria/limpieza-vial//"> <!-- Enlace al evento -->
-                    <img src="mollet+net.jpg" alt="Evento de limpieza"> <!-- Imagen del evento -->
+        <h2>Imágenes</h2> <!-- Título de la sección de imágenes -->
+        <div class="grid"> <!-- Contenedor para la cuadrícula de imágenes -->
+            <figure> <!-- Primera figura de la galería -->
+                <a href="http://www.espairuralgallecs.cat///"> <!-- Enlace a la página del paisaje natural -->
+                    <img src="Gallecs.jpg" alt="Paisaje Natural"> <!-- Imagen del paisaje natural -->
                 </a>
-            </article>
-            <article> <!-- Segundo artículo de noticias -->
-                <h3>Nuevo Punto de Reciclaje Inaugurado</h3> <!-- Título del artículo -->
-                <p>Se ha inaugurado un nuevo punto de reciclaje en el centro de la ciudad para facilitar la separación de residuos. ¡Utiliza este servicio y contribuye al medio ambiente!</p> <!-- Descripción del nuevo punto de reciclaje -->
-                <a href="https://www.molletvalles.cat/ca/serveis/gestio-de-residus-i-neteja-viaria/deixalleria-mobil//"> <!-- Enlace al punto de reciclaje -->
-                    <img src="deixalleriamollet.jpg" alt="Punto de reciclaje"> <!-- Imagen del punto de reciclaje -->
-                </a>    
-            </article>
-        </section>
+                <p>Parque Natural de Gallecs</p> <!-- Descripción de la imagen -->
+            </figure>
+              
+            <figure> <!-- Segunda figura de la galería -->
+                <a href="https://www.molletvalles.cat/ca/serveis/medi-ambient-i-sostenibilitat//"> <!-- Enlace a la página del proyecto ambiental -->
+                    <img src="proyectoambiental.jpg" alt="Proyecto Ambiental"> <!-- Imagen del proyecto ambiental -->
+                </a>
+                <p>Proyecto ambiental del Ayuntamiento</p> <!-- Descripción de la imagen -->
+            </figure>
+
+            <figure> <!-- Tercera figura de la galería -->
+                <a href="https://www.molletvalles.cat/es/servicios/gestion-de-residuos-y-limpieza-viaria//"> <!-- Enlace a la jornada de limpieza -->
+                    <img src="jornadalimpiezamollet.jpg" alt="Evento de Sostenibilidad"> <!-- Imagen del evento de sostenibilidad -->
+                </a>
+                <p>Jornada de limpieza de espacios públicos</p> <!-- Descripción de la imagen -->
+            </figure>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Ayuntamiento de Mollet del Vallés</p> <!-- Pie de página con derechos de autor -->
-        <a href="#inicio">Volver al inicio</a> <!-- Anclaje para volver al inicio -->
+         <a href="#inicio">Volver al inicio</a> <!-- Anclaje para volver al inicio -->
     </footer>
 </body>
 </html>
