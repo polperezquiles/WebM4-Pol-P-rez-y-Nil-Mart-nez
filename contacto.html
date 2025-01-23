@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para dispositivos móviles -->
-    <title>Inicio - Medio Ambiente en Mollet del Vallés</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Contacto - Medio Ambiente en Mollet del Vallés</title> <!-- Título que aparecerá en la pestaña del navegador -->
     <link rel="stylesheet" href="styles.css"> <!-- Vincula un archivo CSS externo para estilos -->
     <style>
-        /* Estilos CSS para el diseño de la página */
         body {
             text-align: center; /* Centra el texto en todo el cuerpo */
             background-color: #e0f7fa; /* Color de fondo claro */
@@ -52,15 +51,43 @@
             margin-top: 5%; /* Espaciado superior en el pie de página */
             color: black; /* Color del texto en el pie de página */
         }
+        form {
+            max-width: 600px; /* Ancho máximo del formulario */
+            margin: 0 auto; /* Centra el formulario */
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+        form label {
+            display: block; /* Asegura que cada etiqueta esté en su propia línea */
+            margin-top: 5%; /* Espacio superior entre etiquetas */
+        }
+        form input, form textarea {
+            width: 100%; /* Ancho completo para los campos de entrada */
+            margin-top: 5%; /* Espacio superior entre campos */
+            padding: 10px; /* Espaciado interno en los campos */
+            border: 1px solid #ccc; /* Borde ligero para los campos */
+            border-radius: 4px; /* Bordes redondeados para los campos */
+        }
+        form button {
+            margin-top: 10%; /* Espacio superior para el botón */
+            padding: 10px 20px; /* Espaciado interno para el botón */
+            background-color: #4CAF50; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            border: none; /* Sin borde */
+            border-radius: 4px; /* Bordes redondeados para el botón */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+        form button:hover {
+            background-color: #45a049; /* Color del botón al pasar el ratón */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Conservación del Medio Ambiente en Mollet del Vallés</h1> <!-- Título principal de la página -->
-        <a href="https://www.molletvalles.cat//"> <!-- Enlace al sitio web del Ayuntamiento -->
+        <a href="https://www.molletvalles.cat/"> <!-- Enlace al sitio web del Ayuntamiento -->
             <img src="logoMollet.jpg" alt="Logo del Ayuntamiento" style="max-width: 30%; height: auto;"> <!-- Logo del Ayuntamiento -->
         </a>
-       
+        <h1>Contacto</h1> <!-- Título de la sección de contacto -->
         <nav>
             <ul> <!-- Lista de navegación -->
                 <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
@@ -75,23 +102,25 @@
     </header>
 
     <main>
-        <section id="inicio"> <!-- Sección principal de inicio -->
-            <h2>Noticias y Eventos</h2> <!-- Título de la sección de noticias y eventos -->
-            <article> <!-- Artículo de noticias -->
-                <h3>Evento de Limpieza de Espacios Públicos</h3> <!-- Título del artículo -->
-                <p>Únete a nosotros el 15 de enero para limpiar nuestros parques y espacios públicos. ¡Tu participación es crucial para mantener nuestra ciudad limpia!</p> <!-- Descripción del evento -->
-                <a href="https://www.molletvalles.cat/es/servicios/gestion-de-residuos-y-limpieza-viaria/limpieza-vial//"> <!-- Enlace al evento -->
-                    <img src="mollet+net.jpg" alt="Evento de limpieza"> <!-- Imagen del evento -->
-                </a>
-            </article>
-            <article> <!-- Segundo artículo de noticias -->
-                <h3>Nuevo Punto de Reciclaje Inaugurado</h3> <!-- Título del artículo -->
-                <p>Se ha inaugurado un nuevo punto de reciclaje en el centro de la ciudad para facilitar la separación de residuos. ¡Utiliza este servicio y contribuye al medio ambiente!</p> <!-- Descripción del nuevo punto de reciclaje -->
-                <a href="https://www.molletvalles.cat/ca/serveis/gestio-de-residus-i-neteja-viaria/deixalleria-mobil//"> <!-- Enlace al punto de reciclaje -->
-                    <img src="deixalleriamollet.jpg" alt="Punto de reciclaje"> <!-- Imagen del punto de reciclaje -->
-                </a>    
-            </article>
-        </section>
+        <h2>Datos de Contacto</h2> <!-- Título de la sección de datos de contacto -->
+        <p>Teléfono: 123 456 789</p> <!-- Muestra el número de teléfono -->
+        <p>Email: <a href="mailto:contacto@molletdelvalles.cat">contacto@molletdelvalles.cat</a></p> <!-- Enlace de correo electrónico que abre el cliente de correo -->
+        <div id="map"> <!-- Contenedor para el mapa -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.565749472175!2d2.2078912758865257!3d41.5353461712814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bed817cd7e95%3A0xad5c6d41fa4a704a!2sAyuntamiento%20de%20Mollet%20del%20Vall%C3%A8s!5e0!3m2!1ses!2ses!4v1735241301365!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Mapa de Google embebido -->
+        </div>
+        <form> <!-- Formulario de contacto -->
+            <h2>Ponte en contacto con nosotros:</h2> <!-- Título del formulario -->
+            <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+            <input type="text" id="nombre" name="nombre" required> <!-- Campo de entrada para el nombre -->
+
+            <label for="mensaje">Mensaje:</label> <!-- Etiqueta para el campo de mensaje -->
+            <textarea id="mensaje" name="mensaje" required></textarea> <!-- Área de texto para el mensaje -->
+
+            <label for="email">Email:</label> <!-- Etiqueta para el campo de email -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para el email -->
+
+            <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+        </form>
     </main>
 
     <footer>
